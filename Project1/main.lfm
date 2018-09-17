@@ -1,0 +1,93 @@
+object Form1: TForm1
+  Left = 255
+  Height = 570
+  Top = 113
+  Width = 900
+  Caption = 'Project'
+  ClientHeight = 0
+  ClientWidth = 0
+  LCLVersion = '1.8.2.0'
+  object LblBase: TLabel
+    Left = 16
+    Height = 15
+    Top = 64
+    Width = 27
+    Caption = 'Base:'
+    ParentColor = False
+  end
+  object SGBase: TStringGrid
+    Left = 14
+    Height = 344
+    Top = 80
+    Width = 864
+    AutoEdit = False
+    ColCount = 0
+    DefaultColWidth = 860
+    FixedCols = 0
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    RowCount = 0
+    TabOrder = 0
+  end
+  object EdtV: TEdit
+    Left = 14
+    Height = 23
+    Top = 432
+    Width = 864
+    TabOrder = 1
+    Text = 'v'
+  end
+  object Panel1: TPanel
+    Left = 14
+    Height = 50
+    Top = 496
+    Width = 866
+    ClientHeight = 50
+    ClientWidth = 866
+    Color = clWindow
+    ParentColor = False
+    TabOrder = 2
+    object LblU: TLabel
+      Left = 8
+      Height = 15
+      Top = 16
+      Width = 7
+      Caption = 'u'
+      ParentColor = False
+    end
+  end
+  object LblDimension: TLabel
+    Left = 16
+    Height = 15
+    Top = 16
+    Width = 60
+    Caption = 'Dimension:'
+    ParentColor = False
+  end
+  object EdtDimension: TEdit
+    Left = 16
+    Height = 23
+    Top = 32
+    Width = 64
+    TabOrder = 3
+    Text = '3'
+  end
+  object BtnCreate: TButton
+    Left = 104
+    Height = 25
+    Top = 30
+    Width = 75
+    Caption = 'Create'
+    OnClick = BtnCreateClick
+    TabOrder = 4
+  end
+  object BtnExecute: TButton
+    Left = 14
+    Height = 25
+    Top = 464
+    Width = 75
+    Caption = 'Execute'
+    OnClick = BtnExecuteClick
+    TabOrder = 5
+  end
+end
